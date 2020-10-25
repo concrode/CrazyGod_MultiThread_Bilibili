@@ -2,7 +2,7 @@ public class TestThread1 extends Thread{
 
     @Override
     public void run() {
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 200; i++) {
             System.out.println("In run()------" + i);
         }
     }
@@ -20,7 +20,7 @@ public class TestThread1 extends Thread{
          */
         t1.start();
 
-        for (int i = 0; i < 2000; i++) {
+        for (int i = 0; i < 1000; i++) {
             System.out.println("In main()--" + i);
         }
     }
