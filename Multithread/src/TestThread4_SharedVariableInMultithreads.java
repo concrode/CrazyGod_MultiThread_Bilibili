@@ -2,7 +2,7 @@
  * Multithread uses one object
  *
  */
-public class TestThread4 implements Runnable{
+public class TestThread4_SharedVariableInMultithreads implements Runnable{
 
     /**
      * Lagavulin--> Get No.10 ticket
@@ -51,7 +51,7 @@ public class TestThread4 implements Runnable{
 
 
     public static void main(String[] args) {
-        TestThread4 t4 = new TestThread4();
+        TestThread4_SharedVariableInMultithreads t4 = new TestThread4_SharedVariableInMultithreads();
 
         new Thread(t4, "Jack").start();
         new Thread(t4, "Thomas").start();
